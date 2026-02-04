@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <title>Calculadora de eficiência energética</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__text">
+      <h1>Calcule a eficiência energética da sua casa!</h1>
+      <p>Seja proativo e resolva o problema do consumo excessivo de energia!</p>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="main__title">
+      Especifique o número de aparelhos que consomem eletricidade:
+    </h2>
+
+    <ul class="list">
+  <li class="list__item">
+    <a href="/{{ size }}/{{ lights }}/3/0">
+      <img class="item__img" src="/static/img/battery.svg">
+      <span>3-5 aparelhos</span>
+    </a>
+  </li>
+
+  <li class="list__item">
+    <a href="/{{ size }}/{{ lights }}/6/0">
+      <img class="item__img" src="/static/img/battery.svg">
+      <span>6-8 aparelhos</span>
+    </a>
+  </li>
+
+  <li class="list__item">
+    <a href="/{{ size }}/{{ lights }}/10/0">
+      <img class="item__img" src="/static/img/battery.svg">
+      <span>10+ aparelhos</span>
+    </a>
+  </li>
+
+  <!-- BOTÃO ECOLÓGICO -->
+  <li class="list__item">
+    <a href="/{{ size }}/{{ lights }}/3/1" class="eco eco--green">
+      <img class="item__img" src="/static/img/verde.png.jpeg">
+      <span>Nossa construção ecológica</span>
+    </a>
+  </li>
+</ul> 
+</main>
+</body>
+</html>
